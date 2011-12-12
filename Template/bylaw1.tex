@@ -1,0 +1,46 @@
+\documentclass{report}
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\renewcommand{\theenumii}{\alph{enumii}}
+\renewcommand{\labelenumii}{(\theenumii)}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{(\theenumiii)}
+
+\setlength{\parindent}{0in}
+
+\reversemarginpar
+\setlength{\marginparwidth}{1.2in}
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
+{\raggedright\footnotesize #1}}
+
+\begin{document}
+
+\begin{center}
+	{\LARGE\sc ByLaw 1323523328} \\[0.1in]
+\end{center}
+
+	{A ByLaw providing for the rules of general governance and transaction of the affairs of the Corporation known as the Carleton Computer Science Society.} \\[0.1in]
+	{\em Be in enacted by the Board of Directors and Members of the Corporation known as Carleton Computer Science Society as follows:}
+
+\begin{enumerate}
+	\item\marginpar{\em Short Title}This ByLaw may be henceforth cited as the {\em Consitution of the Carleton Computer Science Society}.
+
+	\item\marginpar{\em Name of the Society}The Society shall be henceforth known as the {\em Carleton Computer Science Society}, and may be referred to as simply {\em the Society}.
+
+	\item\marginpar{\em Definition of the Society Year}The {\em Society Year} shall be defined as the period between {\em May 1st} of the current {\em Calendar Year} and {\em April 31st} of the subsequent {\em Calendar Year}.
+
+	\item\marginpar{\em Objects of the Society}The {\em Objects of the Society} shall be
+		\begin{enumerate}
+			\item to promote the social and academic values associated with the study of Computer Science at Carleton University;
+			\item to provide services related to, but not limited to, socialization, academics and industry associated with the field of Computer Science; and,
+			\item to maintain status as
+				\begin{enumerate}
+					 \item a departmental society of Carleton University, as per the {\em Accreditation of Student Organizations Policy}; and,		
+					\item an incorporated not-for-profit organization, as per the pertainent Ontario Corporations legislation and regulations.
+				\end{enumerate}
+		\end{enumerate}
+\end{enumerate}
+
+\end{document}
