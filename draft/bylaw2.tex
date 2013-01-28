@@ -1,0 +1,52 @@
+% vim: textwidth=0 softtabstop=8 shiftwidth=8 noexpandtab
+\documentclass{report}
+
+\renewcommand{\theenumi}{\arabic{enumi}}
+\renewcommand{\labelenumi}{(\theenumi)}
+\renewcommand{\theenumii}{\alph{enumii}}
+\renewcommand{\labelenumii}{(\theenumii)}
+\renewcommand{\theenumiii}{\roman{enumiii}}
+\renewcommand{\labelenumiii}{(\theenumiii)}
+
+\setlength{\parindent}{0in}
+
+\reversemarginpar
+\setlength{\marginparwidth}{1.2in}
+\let\oldmarginpar\marginpar
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\footnotesize #1]%
+{\raggedright\footnotesize #1}}
+
+\begin{document}
+
+\begin{center}
+	{\LARGE\sc Bylaw 2} \\[0.1in] % TODO
+	{\small\em A Bylaw seeking to clarify the running of elections and calling of meetings.} \\[0.1in]
+\end{center}
+
+	{\em Be it enacted by the Undergraduate Students of the School of Computer Science at Carleton University assembled in meeting as follows:}
+
+\begin{enumerate}
+	\section*{\sc Elections}
+	
+	\item\marginpar{\em Returning Officer}A {\em Returning Officer} oversees an election, choosing the rules of the election and announcing the official results.  A {\em Returning Officer} is chosen at a general meeting and may be removed at a general meeting.  A {\em Returning Officer} is not eligible to run in any election they oversee.
+
+	\section*{\sc Meetings}
+
+	\item\marginpar{\em Calling of Board Meetings}A board meeting of may be called by the {\em President}, or the {\em Secretary}, or no less than 3 members of the {\em Board of Directors}.
+
+	\item\marginpar{\em Calling of General Meetings}A general meeting may be called by a majority of members of the board or by no less than 10 members of the society.
+
+	\item\marginpar{\em Notice Requirement of General Meetings}A general meeting is called by a majority of members of the board or by no less than 10 members of the society.
+
+	\section*{\sc Execution}
+	
+	\item{\em Witness the seal of the Undergraduate Students of the School of Computer Science at Carleton University assembled in meeting:}\\[0.5in]
+
+	{\bf The President of the Society}\\[0.5in]
+
+	{\bf The Secretary of the Society}\\[0.5in]
+
+	{\bf The Director of the School of Computer Science}
+\end{enumerate}
+
+\end{document}

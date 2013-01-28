@@ -1,10 +1,10 @@
-.PHONY: open clean problems open_problems
+.PHONY: open clean
 
-PROJECT		= bylaw1
+BYLAWS		= bylaw1 bylaw2
 
-MAIN_TEX	= ${PROJECT}.tex
+SOURCE	= ${addsuffix .tex,${BYLAWS}}
 
-PDF     = ${PROJECT}.pdf
+PDF     = ${addsuffix .pdf,${BYLAWS}}
 
 FIGURES =
 
@@ -14,14 +14,11 @@ TEXOPTS = -halt-on-error
 open: ${PDF}
 	open $< || gnome-open $<
 
-${PDF}: ${MAIN_TEX} ${FIGURES}
+${PDF}: ${SOURCE} ${FIGURES}
 
 %.pdf:	%.tex
 	${TEX} ${TEXOPTS} $< 
 	${TEX} ${TEXOPTS} $<
-
-open_problems: ${PROBLEMS}
-	open $< || gnome-open $<
 
 clean:
 	rm -f *.log *.aux *.dvi ${PDF}
